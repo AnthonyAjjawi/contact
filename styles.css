@@ -7,19 +7,69 @@
 
 body {
     background-color: #1399CF;
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
 }
+
 
 .form-container {
     max-width: 500px;
     margin: 150px auto;
-    background-color: azure;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px gray;
+    transition: transform 0.3s ease;
 
 }
+
+.form-container:hover {
+    transform: scale(1.1);
+   
+}
+
+h2 {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg,rgba(19, 153, 207, 1) 0%, rgba(87, 199, 133, 1) 0%, rgba(126, 199, 107, 1) 0%, rgba(13, 153, 209, 1) 100%, rgba(217, 200, 46, 1) 100%);
+    border-radius: 6px;
+}
+
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 150px;
+    padding: 50px;
     gap: 1rem;
+}
+
+
+
+label {
+    color: #1399CF;
+    font-weight: 600;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+    font-size: 1rem;
+    width: 300px;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+input {outline:0;}
+ input:focus {outline:none!important;} 
+
+textarea { outline: 0;}
+textarea:focus {outline: none!important;} 
+
+input[type="submit"] {
+    color: #1399CF;
+    font-weight: 600
+    
 }
