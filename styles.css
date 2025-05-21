@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+
+body {
+    background-color: #1399CF;
+}
+
 .form-container {
     max-width: 500px;
     margin: 150px auto;
